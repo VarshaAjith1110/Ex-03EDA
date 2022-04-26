@@ -10,16 +10,23 @@ anomalies to direct specific testing of your hypothesis.
 
 # ALGORITHM
 ### STEP 1
-
+Import the required packages(pandas,numpy,seaborn).
 ### STEP 2
-
+Read the given csv file.
 ### STEP 3
-
+Convert the file into a dataframe and get information of the data.
 ### STEP 4
-
-
-
+Remove the non numerical data columns using drop() method.
+## STEP 5
+Replace the null values using (.fillna).
+## STEP 6
+Returns object containing counts of unique values using (value_counts()).
+## STEP 7
+Plot the counts in the form of Histogram or Bar Graph.
+## STEP 8
+Plot the counts in the form of Histogram or Bar Graph.
 # CODE
+```
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -49,4 +56,14 @@ pd.crosstab(df["Pclass"],df["Survived"])
 pd.crosstab(df["Sex"],df["Survived"])
 df.corr()
 sns.heatmap(df.corr(),annot=True)
-# OUPUT
+```
+# OUTPUt
+![output](/e1.png)
+![output](e22.png)
+
+![output](/e3.png)
+![output](/e4.png)
+![output](/e5.png)
+![output](/e6.png)
+![output](/e7.png)
+![output](/e8.png)
